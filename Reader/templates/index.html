@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+  {% block pageTitle %}RSS Reader{% endblock %}
+  
+  {% block pageContent %}
+		<script>
+			$(function(){
+				$("#loaderDiv").hide();
+			})
+		</script>
+		<div id="infoDiv">
+	    <h1 align="center">RSS Reader Project</h1>
+	    <hr/>
+			<pre>
+			This is an RSS Reader. Given a url, it displays the RSS feeds.
+
+			Shardul Lingwal
+			shardullingwal94@gmail.com
+			+91-8923503717
+			</pre>
+		</div>
+		<hr/>
+		<div id="showFeeds"></div>
+  {% endblock %}
+
+</html>
